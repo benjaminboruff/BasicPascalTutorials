@@ -1,0 +1,13 @@
+program SumNAvg;
+
+const
+  NumOfInts = 5;
+  Numbers:array[1 .. NumOfInts]   of integer = (45,7,68,2,34);
+
+var
+  sum : integer;
+  average : real;
+
+begin
+  writeln(Numbers);
+end.

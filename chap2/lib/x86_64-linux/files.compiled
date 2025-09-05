@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value="-MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fu/home/bhboruff/programming/pascalStuff/BasicPascalTutorial/chap2/ -FU/home/bhboruff/programming/pascalStuff/BasicPascalTutorial/chap2/lib/x86_64-linux/ -FE/home/bhboruff/programming/pascalStuff/BasicPascalTutorial/chap2/ -o/home/bhboruff/programming/pascalStuff/BasicPascalTutorial/chap2/files files.pas"/>
+</CONFIG>
