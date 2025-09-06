@@ -20,13 +20,22 @@ type
       December = 12
   );
 
+  User = record
+    name: string;
+    email: string;
+  end;
+
+  userPtr = ^User;
+
 const
   WinterMonths: array[1..3] of TMonth = (December, January, February);
 
 var
   i: longint;
   x: string;
-  testArray: array[1..3] of integer;
+  // testArray: array[1..3] of integer;
+  // user1: User;
+  userAddr: userPtr;
 
 begin // Main
   for i := ord(low(TMonth)) + 1 to ord(high(TMonth)) do begin
@@ -40,12 +49,16 @@ begin // Main
   end;
   writeln;
 
-  testArray[1] := 1;
-  testArray[2] := 1;
-  testArray[3] := 1;
-  testArray[4] := 20000000;
-
-  for i := 1 to 4 do begin
-    write(testArray[i]);
-  end;
+  // testArray[1] := 1;
+  // testArray[2] := 1;
+  // testArray[3] := 1;
+  // user1.name := 'Ben';
+  // user1.email := 'dude@gmail.com';
+  new(userAddr);
+  // userAddr := @user1;
+  // userAddr^.email := 'foo';
+  userAddr^.name := 'Dude';
+  userAddr^.email := 'duder@gmail.com';
+  writeln(userAddr^.email);
+  dispose(userAddr);
 end. // Main
